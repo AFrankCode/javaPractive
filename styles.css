@@ -1,0 +1,48 @@
+.slider-container {
+    border: 5px solid;
+    width: 80vw;
+    margin: 0 auto;
+    height: 40vh;
+    max-width: 80rem;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: all 0.25s ease-in-out;
+    text-align: center;
+}
+.slide-img {
+    height: 100%;
+    object-fit: cover;
+}
+.slide h1 {
+    font-size: 5rem;
+}
+.vacation-img {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.slide:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.slide:nth-child(3) {
+    background: linear-gradient(rgba(0,0, 0, 0.4), rgba(0,0,0,.04));
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75rem;
+}
